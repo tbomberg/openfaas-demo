@@ -7,4 +7,7 @@ functions:
     lang: python3
     handler: ./demo-api
     image: harbor.csvcdev.vpc.arvato-systems.de/openfaas/demo-api:latest
+    annotations:
+      topic: cron-function
+      schedule: "*/5 * * * *"
 

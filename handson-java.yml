@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://gateway-openfaas.devservices.onvpc.de
+functions:
+  handson-java:
+    lang: java11
+    handler: ./handson-java
+    image: harbor.csvcdev.vpc.arvato-systems.de/openfaas/handson-java:latest
+

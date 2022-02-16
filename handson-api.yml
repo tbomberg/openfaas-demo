@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://gateway-openfaas.devservices.onvpc.de
+functions:
+  handson-api:
+    lang: python3
+    handler: ./handson-api
+    image: harbor.csvcdev.vpc.arvato-systems.de/openfaas/handson-api:latest
+
