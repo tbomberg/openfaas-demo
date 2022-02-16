@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://gateway-openfaas.devservices.onvpc.de
+functions:
+  demo-js:
+    lang: node17
+    handler: ./demo-js
+    image: harbor.csvcdev.vpc.arvato-systems.de/openfaas/demo-js:latest
+
