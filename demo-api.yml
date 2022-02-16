@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://gateway-openfaas.devservices.onvpc.de
+functions:
+  demo-api:
+    lang: python3
+    handler: ./demo-api
+    image: harbor.csvcdev.vpc.arvato-systems.de/openfaas/demo-api:latest
+
